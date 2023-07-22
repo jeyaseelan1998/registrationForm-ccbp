@@ -1,1 +1,89 @@
-/* Write your CSS code here */
+.registration-form-bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 55px;
+  color: #ea580c;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.registration-form-card {
+  height: 350px;
+  width: 420px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.registration-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registration-form label {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.registration-form input {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #475569;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #cbd2d9;
+  margin-bottom: 15px;
+}
+
+.registration-form .error-input {
+  margin-bottom: 0;
+  background-color: #fef2f4;
+  border: 2px solid #ff0b37;
+}
+
+.error-msg {
+  margin-top: 5px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff0b37;
+}
+
+.submit-button {
+  align-self: center;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ea580c;
+  color: #ffffff;
+}
+
+.success-image {
+  width: 75px;
+  align-self: center;
+}
+
+.success-msg {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: ;
+}
