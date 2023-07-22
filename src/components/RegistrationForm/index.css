@@ -74,6 +74,9 @@
   border: none;
   background-color: #ea580c;
   color: #ffffff;
+  font-family: Roboto;
+  cursor: pointer;
+  outline: none;
 }
 
 .success-image {
@@ -85,5 +88,6 @@
   font-size: 14px;
   font-weight: 500;
   font-family: Roboto;
-  color: ;
+  color: #475569;
+  align-self: center;
 }

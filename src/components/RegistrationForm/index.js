@@ -7,7 +7,7 @@ class RegistrationForm extends Component {
     lastName: '',
     errorMsgFirstName: false,
     errorMsgLastName: false,
-    isRegistrationSuccess: true
+    isRegistrationSuccess: false
   }
 
   onChangeInput = event => {
@@ -74,12 +74,16 @@ class RegistrationForm extends Component {
     )
   }
 
+  onSubmitAnotherResponse = () => {
+    this.setState({isRegistrationSuccess: false, firstName:'', lastName:''})
+  }
+
   onSuccessfulRegistration = () => {
     return (
       <>
         <img className="success-image" src="https://assets.ccbp.in/frontend/react-js/success-icon-img.png" alt="success"/>
         <p className="success-msg">Submitted Successfully</p>
-        <button className="submit-button" type="button">Submit Another Response</button>
+        <button className="submit-button" type="button" onClick={this.onSubmitAnotherResponse}>Submit Another Response</button>
       </>
     )
   }
